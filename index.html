@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>E-commerce Site</title>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div id="top-nav">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+
+                    <!-- <li><a href="cart.html">Cart</a></li> -->
+                    <!-- <li><a href="#" id="cart">Cart </a><span id="cartCount">0</span>
+                    </li> -->
+
+                </ul>
+            </nav>
+            <div class="search-form ">
+                <input type="text" id="searchInput" placeholder="Search products">
+                <button onclick="searchProducts()">Search</button>
+            </div>
+            <div class="details">
+                <div class="cart">
+                    <div id="cartCount" onclick="toggleCart()"><i class="fas fa-cart-arrow-down"></i>Cart(0)</div>
+                </div>
+                <div class="user">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6v-Quj0rUbKfkYkO5xry7QsyV_3dNemjlbw&usqp=CAU" alt="user profile">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <!-- <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" width="125px"> -->
+
+        </div>
+
+
+    </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Buy Your Favorite Products</h1>
+            <h2>Get the best quality products at the best price</h2>
+            <a href="#" class="btn">Explore Now...</a>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <h4>Products</h4>
+        <div class="products-container" id="products"></div>
+        <div class="footer">
+
+        </div>
+    </div>
+
+    <div class="sidenav" id="cartContainer" style="display: none;">
+        <a href="#" onclick="toggleCart()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+        <div id="cart"></div>
+        <div id="cartTotal"></div>
+        <button onclick="clearCart()" style="border-radius:20px;background-color:rgb(255, 83, 30); color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;">Clear Cart</button>
+        <button onclick="checkout()" style="border-radius:20px;background-color:dodgerblue; color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;">Checkout</button>
+    </div>
+
+
+    <div id="productPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeProductPopup()">&times;</span>
+            <div class="slideshow-buttons">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+            </div>
+            <p class="pick">choose size</p>
+            <div class="sizes">
+                <div class="size">5</div>
+                <div class="size">6</div>
+                <div class="size">7</div>
+                <div class="size">8</div>
+                <div class="size">9</div>
+                <div class="size">10</div>
+                <div class="size">11</div>
+                <div class="size">12</div>
+            </div>
+            <div id="popupProduct"></div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="search-form ">
+        <input type="text" id="searchInput" placeholder="Search products">
+        <button onclick="searchProducts()">Search</button>
+    </div> -->
+
+    <!-- <div class="products-container" id="products"></div> -->
+    <!-- <div id="productDetails" class="product-details"></div> -->
+    <!-- <div id="cartItems" class="cart-items"></div> -->
+
+
+
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
