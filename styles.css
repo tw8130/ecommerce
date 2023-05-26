@@ -32,7 +32,7 @@
                 align-items: center;
                 width: 100%;
                 background-color: #8e95a5;
-                padding: 1em 2em;
+                padding: 0.3em 0.5em;
             }
             /* .hero {
         background-color: #f5f5f5;
@@ -287,7 +287,7 @@
             .popup-content {
                 background-color: #E0C9CB;
                 /* margin: 10% auto; */
-                padding: 20px;
+                padding: 10px;
                 border: 1px solid #888;
                 width: 80%;
                 position: relative;
@@ -309,16 +309,16 @@
             }
             
             #popupProduct p {
-                font-size: 0.6em;
-                color: #BA7E7E;
+                font-size: 0.8em;
+                color: black;
                 letter-spacing: 1px;
-                margin-top: 5%;
+                margin-top: -2%;
             }
             
             #popupProduct h1 {
                 font-size: 1.2em;
                 color: #4E4E4E;
-                margin-top: -5p
+                margin-top: -5px;
             }
             
             #popupProduct h2 {
